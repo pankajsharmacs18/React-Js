@@ -518,22 +518,4 @@ Optionally, components will also receive:
 *   `target` on `a` (`string`)
     — see `linkTarget` option
 
-## Security
-
-Use of `react-markdown` is secure by default.
-Overwriting `transformLinkUri` or `transformImageUri` to something insecure will
-open you up to XSS vectors.
-Furthermore, the `remarkPlugins` and `rehypePlugins` you use and `components`
-you write may be insecure.
-
-To make sure the content is completely safe, even after what plugins do,
-use [`rehype-sanitize`][sanitize].
-That plugin lets you define your own schema of what is and isn’t allowed.
-
-
-## Contribute
-
-See [`contributing.md`][contributing] in [`https://github.com/pankajsharmacs18/`][health] for ways
-to get started.
-See [`https://github.com/pankajsharmacs18/`][support] for ways to get help.
 
