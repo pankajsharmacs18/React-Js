@@ -1,16 +1,5 @@
-# react-markdown
+# react-Js Quick Tutorial
 
-[![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
-[![Size][size-badge]][size]
-[![Sponsors][sponsors-badge]][collective]
-[![Backers][backers-badge]][collective]
-[![Chat][chat-badge]][chat]
-
-Markdown component for React using [**remark**][remark].
-
-[Learn markdown here][learn] and [check out the demo here][demo].
 
 ## Install
 
