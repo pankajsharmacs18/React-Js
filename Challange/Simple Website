@@ -1,0 +1,62 @@
+#Index.jss
+
+
+import React from 'react';
+import ReactDom from 'react-dom';
+import './index.css';
+
+let CTime=new Date(2020,5,5,12);
+CTime=CTime.getHours();
+let Greeting="";
+let Css={};
+if(CTime>=1 && CTime<12)
+{
+    Greeting="Good Morning !";
+    Css.color='Green';
+}
+else if(CTime>=12 && CTime<19)
+{
+    Css.color='Orange';
+    Greeting="Good Evening !";
+}
+else
+{
+    
+    Css.color='Black';
+    Greeting="Good Night !";
+}
+
+
+ReactDom.render
+(
+    <>
+    <div className="div">
+<h1>Hii Sir, <span style={Css}> {Greeting}</span></h1>
+</div>
+</>
+,document.getElementById('root'));
+
+
+
++ + + + + + + + + + + + + +  + + + + + + + + + + +  + + + + + + + + + + + + + ++ + + + + + 
+===================================================================================================================
+index.css
+body
+{
+  background-color: chartreuse;
+}
+
+.div
+{
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+ background-color: blueviolet; 
+  margin-left: 550px;
+  margin-top: 350px;
+  padding-left: 30px;
+  padding-top: 8px;
+  border-width: 5px;
+  border-color: black;
+}
+
