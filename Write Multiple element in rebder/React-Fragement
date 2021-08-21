@@ -1,0 +1,12 @@
+var React =require("react");
+var ReactDom=require("react-dom");
+
+ReactDom.render(
+<React.Fragment >
+<h1 align="center">Hi Pankaj SHARMA</h1>
+<p>Gla University ,Mathura </p>
+<h3>B.tech with computer science </h3>
+
+</React.Fragment>
+
+,document.getElementById('root'))
