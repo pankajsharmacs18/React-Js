@@ -1,0 +1,15 @@
+import React from 'react';
+import ReactdOM from 'react-dom';
+
+const name="Pankaj Sharma";
+const Cdate=new Date().toLocaleDateString();
+const time=new Date().toLocaleTimeString();
+ReactdOM.render(
+<>
+<h1>My name is {name}</h1>
+<h2>Today's Date is {Cdate}</h2>
+<h3>Current time is {time}</h3>
+</>
+,document.getElementById('root')
+
+);
