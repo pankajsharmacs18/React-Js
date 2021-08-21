@@ -1,0 +1,18 @@
+import React from 'react';
+import ReactdOM from 'react-dom';
+
+ReactdOM.render(
+<>
+    <h1 >Top 5  Webseries </h1>
+    <p >Most five favoruout Webseries</p>
+    <ol>
+    <li>Mirzapur</li>
+    <li>Scared Game</li>
+    <li>The Office </li>
+    <li>Ashram</li>
+    <li>Mere pass tum ho</li>
+    </ol>
+</>,
+document.getElementById('root')
+
+);
