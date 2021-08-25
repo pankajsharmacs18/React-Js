@@ -1,0 +1,75 @@
+------------------------------------------------------------------------------------
+App.jsx Fine (Componenat)
+import React, { useState } from 'react';
+
+const App=()=>
+{
+
+const [value,setCount]=useState(0);
+const INcNum=()=>
+{
+    setCount(value+1);
+};
+return (
+
+    <>
+        <h1>{value}</h1>
+        <button onClick={INcNum}>Click ME</button>
+    </>
+)
+}
+    
+
+export default App;
+
++  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+index.csss
+
+body
+{
+  background-color: rgb(171, 175, 167);
+}
+*{
+  box-sizing:  border-box;
+  padding: 0;
+  margin: 0;
+  background-color: cadetblue;
+}
+.div
+{
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button
+{
+  align-self:  center;
+  padding: 15px 20px;
+  background: coral;
+  color:  white;
+  border: 2px solid #ecf0f1;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: poi;
+}
+
+-------------------------------------------------------------------
+index.js
+import React from 'react';
+import App  from './App';
+import ReactDom from 'react-dom';
+import "./index.css";
+
+ReactDom.render(
+<>
+<h2>This is Pushup Button</h2>
+
+<button onClick={IncNum}>{}</button>
+  
+</>
+,document.getElementById('root'));
