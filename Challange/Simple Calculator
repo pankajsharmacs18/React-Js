@@ -1,0 +1,47 @@
+
+index.js
+import React from 'react';
+import ReactDom from 'react-dom';
+import { add,sub,mul,div } from './Calc';
+
+
+const a=prompt("Enter first number");
+
+const b=prompt("Enter 2nd number");
+ReactDom.render(
+
+<>
+<ol>
+<li>Sum of Two Number is {add(a,b)}</li>
+<li> Diffrence of two number{sub(a,b)}</li>
+
+<li>Multippication of two number {mul(a,b)}</li>
+<li>Division of two number is {div(a,b)}</li>
+
+</ol>
+</>
+,document.getElementById('root'));
+
+
++ + + ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Cal.jsx
+----------------------------------------------------
+
+import React from 'react';
+function add(a,b)
+{
+    return a+b;
+}
+function sub(a,b)
+{
+    return a-b;
+}
+function mul(a,b)
+{
+    return a*b;
+}
+function div(a,b)
+{
+    return a/b;
+}
+export {add,sub,mul,div};
